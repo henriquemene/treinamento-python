@@ -1,0 +1,5 @@
+print("-------desafio 03-------")
+nur = int(input("escolha um numero?"))
+nor = int(input("escolha outro numero?"))
+res = (nur + nor)
+print("a soma entre {0}  e {1} é {2}".format(nur,nor,res ))
