@@ -1,0 +1,10 @@
+print("-------exercicio 8-------")
+nu1=float(input("escolha um numero ? "))
+nu2=float(input("escolha um numero ? "))
+nu3=float(input("escolha um numero ? "))
+nu4=float(input("escolha um numero ? "))
+nu5=float(input("escolha um numero ? "))
+soma=(nu1+nu2+nu3+nu4+nu5)
+resposta=soma/2
+print(f"a soma de todos os numeros escolhidos é {soma} ")
+print(f"e a media entre eles é {resposta}")
