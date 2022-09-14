@@ -3,11 +3,6 @@
 print("-------exercicio 3-------")
 
 
-
-#sexo=str(input("qual é o seu sexo ? M ou F ? "))
-#civil=str(input("qual é o seu estado civil? S,C,V,D?  "))
-
-
 while True:
     nome=str(input("qual o seu nome ? "))
     qnt_caractere= len(nome)
