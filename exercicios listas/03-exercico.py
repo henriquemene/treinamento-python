@@ -1,4 +1,4 @@
-print("------- exercicio 1 -------")
+print("------- exercicio 3 -------")
 nota=[6,7,9,10]
 print(nota)
 media=(sum(nota))/2
