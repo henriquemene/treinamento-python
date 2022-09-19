@@ -1,15 +1,14 @@
-def valorPagamento(pagamento, dias):
-    return pagamento*1.03 + 0.01*dias
+def valor_Pagamento(total_pagamento, total_dias):
+    return total_pagamento*1.03 + 0.01*total_dias*total_pagamento
 
 quantidade = total = 0
 
 while True:
-    pagamento = float(input('Valor da prestação: '))
-    if pagamento == 0:
+    total_pagamento = float(input('Valor da prestação: '))
+    if total_pagamento == 0:
         print(f'Total: {total}. Quantidade: {quantidade} ')
         break
-    dias = int(input('Dia em atraso: '))
-    print(f'Valor a ser pago: {valorPagamento(pagamento, dias) :.2f}')
+    total_dias = int(input('Dia em atraso: '))
+    print(f'Valor a ser pago: {valor_Pagamento(total_pagamento, total_dias) :.2f}')
     quantidade += 1
-    total += valorPagamento(pagamento, dias)
-    
+    total += valor_Pagamento(total_pagamento, total_dias)
