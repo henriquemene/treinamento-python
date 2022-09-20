@@ -10,3 +10,4 @@ soma=sum(numero)
 
 print(f"A soma dos numeros são {soma}")
 print(numero)
+print("ola")
