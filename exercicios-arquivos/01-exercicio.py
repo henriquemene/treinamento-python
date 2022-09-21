@@ -1,6 +1,6 @@
 import os
 
-def  ip_valido ( ip_string ):
+def  validar_valido ( ip_string ):
     partes  =  ip_string.split( "." )
     if  len( partes ) !=  4 :
         return  False
@@ -22,7 +22,7 @@ if  os.path.exists( "./arquivo.txt"):
     ips_invalidos  = []
     
     for  i  in  lista_ips :
-        if  ip_valido( i ) ==  True :
+        if  validar_valido( i ) ==  True :
             ips_validos.append( i )
         else :
             ips_invalidos.append( i )
