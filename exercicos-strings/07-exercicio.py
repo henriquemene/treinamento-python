@@ -6,15 +6,15 @@ conte_vogais = 0
 for c in range(0,len(frase_escolhida)):
     if frase_escolhida[c] == " ":
         conte_espacos +=  1
-    if frase_escolhida[c] == "a":
+    elif frase_escolhida[c] == "a":
         conte_vogais += 1
-    if frase_escolhida[c] == "e":
+    elif frase_escolhida[c] == "e":
         conte_vogais += 1
-    if frase_escolhida[c] == "i":
+    elif frase_escolhida[c] == "i":
         conte_vogais += 1
-    if frase_escolhida[c] == "o":
+    elif frase_escolhida[c] == "o":
         conte_vogais += 1
-    if frase_escolhida[c] == "u":
+    elif frase_escolhida[c] == "u":
         conte_vogais += 1
 
 
