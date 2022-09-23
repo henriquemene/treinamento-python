@@ -1,5 +1,6 @@
 import os
 
+porta = "abrir"
 def  validar_valido ( ip_string ):
     partes  =  ip_string.split( "." )
     if  len( partes ) !=  4 :
@@ -12,7 +13,7 @@ def  validar_valido ( ip_string ):
             return  False
     return  True
 
-if  os.path.exists( "./arquivo.txt"):
+if os.path.exists("./arquivo.txt"):
 
     ips_arquivo  =  open( "./arquivo.txt" , "r" )
 

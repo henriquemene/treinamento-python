@@ -18,7 +18,6 @@ for c in range(0,len(frase_escolhida)):
         conte_vogais += 1
 
 
-
 print(f"existe {conte_espacos} espaços em branco em sua frase!" )
 print(f"existe {conte_vogais} vogais em sua frase !" )
 
