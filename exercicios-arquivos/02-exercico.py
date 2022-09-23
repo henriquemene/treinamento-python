@@ -18,23 +18,23 @@ for linha in linhas_do_arquivo:
 total_soma = int(sum(espacos_vazios))
 
 
-arquivo_Relatorio = open('./arquivo3.txt', 'w')
-arquivo_Relatorio.write(
+relatorio_do_arquivo = open('./arquivo3.txt', 'w')
+relatorio_do_arquivo.write(
     'ACME Inc.               Uso do espaco em disco pelos usuarios\n')
-arquivo_Relatorio.write(
+relatorio_do_arquivo.write(
     '------------------------------------------------------------------------')
-arquivo_Relatorio.write('\nNr.  Usuario        Espaco utilizado     %% do uso')
+relatorio_do_arquivo.write('\nNr.  Usuario        Espaco utilizado     %% do uso')
 
 
 for i in range(0, len(usuarios_do_arquivo)):
     espaco_mega = espacos_vazios[i] / (1024.0 * 1024.0)
-    percentua_de_lUso = espacos_vazios[i] / total_soma
-    arquivo_Relatorio.write('\n%d - %s   -    %.2f MB    -     %.2f%%' %
-        (i + 1, usuarios_do_arquivo[i], espaco_mega, percentua_de_lUso * 100.0))
+    percentua_de_uso = espacos_vazios[i] / total_soma
+    relatorio_do_arquivo.write('\n%d - %s   -    %.2f MB    -     %.2f%%' %
+        (i + 1, usuarios_do_arquivo[i], espaco_mega, percentua_de_uso * 100.0))
 
-arquivo_Relatorio.write('\nEspaco total ocupado: %.2f MB' %
+relatorio_do_arquivo.write('\nEspaco total ocupado: %.2f MB' %
     (total_soma / (1024.0 * 1024.0)))
-arquivo_Relatorio.write('\nEspaco medio ocupado: %.2f MB' %
+relatorio_do_arquivo.write('\nEspaco medio ocupado: %.2f MB' %
     (total_soma / len(usuarios_do_arquivo) / (1024.0 * 1024.0)))
 
-arquivo_Relatorio.close()
+relatorio_do_arquivo.close()
