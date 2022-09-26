@@ -1,8 +1,8 @@
 class Ball:
-    def __init__(self, color="unknown", circunf=0, material="unknown"):
-        self.color = color
-        self.circunf = circunf
-        self.material = material
+    def __init__(self, color_area="unknown", circunferencia_area=0, material_utilizado="unknown"):
+        self.color = color_area
+        self.circunf = circunferencia_area
+        self.material = material_utilizado
 
     def troca_Cor(self):
         trocar_cores = input(f"Deseja mudar a cor atual {self.color}? [s/n]")
