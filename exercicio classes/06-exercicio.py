@@ -1,16 +1,16 @@
 import time
 
-class televisor_eletronico:
+class televisorEletronico:
     def __init__(self, canal_da_televisao="1", volume_da_televisao="50"):
         self.canal = canal_da_televisao
         self.volume = volume_da_televisao
 
     
-    def canal_televisao (self):
+    def canais_de_televisao (self):
         return self.__canal
 
    
-    def canal_televisao_dois (self, numero_canais):
+    def canais_da_segunda_televisao (self, numero_canais):
 
         if numero_canais.isdigit():
             numeros_controle = int(numero_canais)
@@ -24,11 +24,11 @@ class televisor_eletronico:
             print("O canal deve ser apenas números!")
 
     
-    def volume_altofalante(self):
+    def volume_da_televisao(self):
         return self.__volume
 
     
-    def volume_televisao(self, numero):
+    def segundo_volume_da_televisao(self, numero):
 
         if numero.isdigit():
             numero_canais = int(numero)
@@ -42,11 +42,11 @@ class televisor_eletronico:
             print("O volume deve ser apenas números!")
 
 
-    def muda_canal(self):
+    def mudar_canal(self):
         numero_canal = input("Mudar para CANAL: ")
         self.canal = numero_canal
 
-    def muda_volume(self):
+    def mudar_volume(self):
         numero_canais = input("Mudar para VOLUME: ")
         self.volume = numero_canais
 
@@ -54,10 +54,10 @@ class televisor_eletronico:
         return (f"CANAL: {self.canal} \nvolume: {self.volume}\n ")
 
 def main():
-    televisao_01 = televisor_eletronico()
+    primeira_televisao = televisorEletronico()
 
     while True:
-        print(televisao_01)
+        print(primeira_televisao)
 
         print("opções ---------")
         print("1 - mudar canal")
@@ -66,10 +66,10 @@ def main():
         selecionar_canal = input("Selecionar:")
 
         if selecionar_canal == "1":
-            televisao_01.muda_canal()
+            primeira_televisao.mudar_canal()
 
         elif selecionar_canal == "2":
-            televisao_01.muda_volume()
+            primeira_televisao.mudar_volume()
 
         elif selecionar_canal == "3":
             print("Desligando ...")

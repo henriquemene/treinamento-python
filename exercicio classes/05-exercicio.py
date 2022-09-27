@@ -1,4 +1,4 @@
-class conta_corrente:
+class contaCorrente:
 
     def __init__(self,numero_conta, nome_correntista,saldo_bancario=0):
         self.saldo = saldo_bancario
@@ -17,7 +17,7 @@ class conta_corrente:
         self.saldo -= valor_saque
         return self.saldo
 
-saldo_total = conta_corrente(250,"Henrique Menegatti")
+saldo_total = contaCorrente(250,"Henrique Menegatti")
 
 print (saldo_total.__dict__)
 
